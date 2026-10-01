@@ -3,133 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sniper Edge Bolivia | Trading Institucional de Alta Precisión</title>
+    <title>Sniper Edge Bolivia | Portal Institucional</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        :root {
-            --bg-dark: #090d16;
-            --card-bg: #111827;
-            --accent-green: #10b981;
-            --text-main: #f3f4f6;
-            --text-muted: #9ca3af;
-            --border-color: #1f2937;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        header h1 {
-            font-size: 2.5rem;
-            color: var(--text-main);
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-        header h1 span {
-            color: var(--accent-green);
-        }
-        header p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 25px;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-        .card:hover {
-            border-color: var(--accent-green);
-            transform: translateY(-3px);
-        }
-        .card h3 {
-            color: var(--accent-green);
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-        .card ul {
-            list-style-type: none;
-        }
-        .card ul li {
-            margin-bottom: 10px;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            position: relative;
-            padding-left: 15px;
-        }
-        .card ul li::before {
-            content: "•";
-            color: var(--accent-green);
-            position: absolute;
-            left: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-color);
-            margin-top: 50px;
-            font-size: 0.9rem;
-        }
+        body { background-color: #0b0f19; color: #f3f4f6; font-family: system-ui, -apple-system, sans-serif; }
     </style>
 </head>
-<body>
+<body class="min-h-screen flex flex-col justify-between">
 
-    <header>
-        <h1>SNIPER EDGE <span>BOLIVIA</span></h1>
-        <p>Metodología Institucional • Precisión Quirúrgica • Gestión de Riesgo Algorítmica</p>
+    <!-- 1. LOGOTIPO E INSTITUCIÓN -->
+    <header class="border-b border-gray-800 bg-gray-900/50 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <!-- Reemplaza el enlace de la imagen con la URL o ruta de tu logotipo -->
+                <img src="https://via.placeholder.com/45" alt="Logo Sniper Edge Bolivia" class="w-12 h-12 rounded-full border border-emerald-500 object-cover">
+                <div>
+                    <h1 class="text-xl font-bold tracking-wider text-white">SNIPER EDGE <span class="text-emerald-400">BOLIVIA</span></h1>
+                    <p class="text-xs text-gray-400">Metodología Institucional • Precisión Quirúrgica</p>
+                </div>
+            </div>
+            <!-- Enlaces rápidos de Redes en el Header (opcional) -->
+            <div class="flex items-center gap-3">
+                <a href="#redes" class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800 px-3 py-1.5 rounded-lg hover:bg-emerald-900 transition">Comunidad & Redes</a>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        <div class="card">
-            <h3>1. Mapa Macro (Ventana 1)</h3>
-            <ul>
-                <li>Análisis de Sesgo en H1 (DXY / EXY).</li>
-                <li>Identificación de Zonas Premium y Discount.</li>
-                <li>Control estadístico de Rango Diario (ATR).</li>
-            </ul>
-        </div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-6xl mx-auto px-4 py-8 w-full space-y-8">
+        
+        <!-- 2. SÍNTESIS DE NOTICIAS QUE MUEVEN EL MERCADO -->
+        <section>
+            <div class="mb-4">
+                <h2 class="text-xl font-bold text-white border-l-4 border-emerald-500 pl-3">Síntesis de Noticias Macro</h2>
+                <p class="text-sm text-gray-400">Eventos de alto impacto (DXY, Fed, NFP, CPI) que dictan la volatilidad diaria.</p>
+            </div>
+            
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-xl">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border-l-2 border-amber-500 pl-4">
+                        <span class="text-xs text-amber-400 font-bold">ALTO IMPACTO</span>
+                        <h4 class="font-bold text-white text-sm mt-1">Datos de Empleo (NFP / ADP)</h4>
+                        <p class="text-xs text-gray-400 mt-1">Monitoreo de la expansión del dólar y su efecto directo en los barridos de liquidez del Oro.</p>
+                    </div>
+                    <div class="border-l-2 border-emerald-500 pl-4">
+                        <span class="text-xs text-emerald-400 font-bold">DISCURSOS / FED</span>
+                        <h4 class="font-bold text-white text-sm mt-1">comparecencias FOMC</h4>
+                        <p class="text-xs text-gray-400 mt-1">Atención a cambios en las tasas de interés que reestructuran el sesgo institucional en H1 y 4H.</p>
+                    </div>
+                    <div class="border-l-2 border-blue-500 pl-4">
+                        <span class="text-xs text-blue-400 font-bold">INFLACIÓN</span>
+                        <h4 class="font-bold text-white text-sm mt-1">Reportes IPC (CPI / PCE)</h4>
+                        <p class="text-xs text-gray-400 mt-1">Disparadores primarios de volatilidad en GBPUSD y XAUUSD durante la Kill Zone de Nueva York.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">
-            <h3>2. Gatillo de Entrada (Ventana 2)</h3>
-            <ul>
-                <li>Espera en Kill Zones (Londres / NY).</li>
-                <li>Barrido de Liquidez institucional (PDH / PDL).</li>
-                <li>Reacción milimétrica en Línea Amarilla (MT) u OTE (78.6%).</li>
-            </ul>
-        </div>
+        <!-- 3. PROBABILIDADES GBPUSD Y XAUUSD (Actualizable diariamente) -->
+        <section>
+            <div class="mb-4">
+                <h2 class="text-xl font-bold text-white border-l-4 border-emerald-500 pl-3">Probabilidades Diarias (GBPUSD & XAUUSD)</h2>
+                <p class="text-sm text-gray-400">Actualiza este apartado todos los días con tus nuevas proyecciones institucionales.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- CUADRO GBPUSD -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-lg text-emerald-400">PROBABILIDADES GBPUSD</h3>
+                        <span class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Sesgo Alcista</span>
+                    </div>
+                    <!-- EDITA AQUÍ TU CONTENIDO DIARIO -->
+                    <div class="space-y-3 text-sm text-gray-300">
+                        <p><strong class="text-white">Panorama Diario:</strong> El precio busca mitigación en zona de descuento previa a la apertura de Londres.</p>
+                        <ul class="space-y-1 text-gray-400 pl-2">
+                            <li>• <strong class="text-gray-200">Nivel Clave:</strong> Mitigación en OTE (78.6%).</li>
+                            <li>• <strong class="text-gray-200">Objetivo (Liquidez):</strong> Barrido de PDH y mitigación de FVG en H1.</li>
+                            <li>• <strong class="text-gray-200">Recomendación:</strong> Esperar confluencia con el índice DXY en Killzone.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div class="card">
-            <h3>3. Gestión de Salida</h3>
-            <ul>
-                <li>Objetivos en extensiones SDE (-2.0 / -2.5).</li>
-                <li>Límite Algorítmico máximo SDE (-4.0).</li>
-                <li>Stop Loss ajustado milimétricamente tras el Order Block.</li>
-            </ul>
-        </div>
-    </div>
+                <!-- CUADRO XAUUSD -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-lg text-amber-400">PROBABILIDADES XAUUSD</h3>
+                        <span class="text-xs bg-amber-950 text-amber-400 border border-amber-800 px-2 py-0.5 rounded">Alta Volatilidad / Zonas OTE</span>
+                    </div>
+                    <!-- EDITA AQUÍ TU CONTENIDO DIARIO -->
+                    <div class="space-y-3 text-sm text-gray-300">
+                        <p><strong class="text-white">Panorama Diario:</strong> El oro mantiene una estructura expansiva buscando vacíos institucionales superiores.</p>
+                        <ul class="space-y-1 text-gray-400 pl-2">
+                            <li>• <strong class="text-gray-200">Nivel Clave:</strong> Bloque de Órdenes en 4H con soporte en Línea Amarilla (MT).</li>
+                            <li>• <strong class="text-gray-200">Objetivo (Liquidez):</strong> Neutralización de máximos asiáticos previos.</li>
+                            <li>• <strong class="text-gray-200">Recomendación:</strong> Ajustar Stop Loss holgado debido al ruido característico del metal.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2026 Sniper Edge Bolivia. Todos los derechos reservados.</p>
+        <!-- 4. TEMAS IMPORTANTES DEL TRADING EN GENERAL -->
+        <section>
+            <div class="mb-4">
+                <h2 class="text-xl font-bold text-white border-l-4 border-emerald-500 pl-3">Temas Importantes del Trading en General</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+                    <h3 class="font-bold text-emerald-400 mb-2">1. Mapa Macro (Ventana 1)</h3>
+                    <ul class="text-sm text-gray-400 space-y-1">
+                        <li>• Análisis de Sesgo en H1 (DXY / EXY).</li>
+                        <li>• Identificación de Zonas Premium y Discount.</li>
+                        <li>• Control estadístico de Rango Diario (ATR).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+                    <h3 class="font-bold text-emerald-400 mb-2">2. Gatillo de Entrada</h3>
+                    <ul class="text-sm text-gray-400 space-y-1">
+                        <li>• Espera en Kill Zones (Londres / NY).</li>
+                        <li>• Barrido de Liquidez institucional (PDH / PDL).</li>
+                        <li>• Reacción milimétrica en Línea Amarilla u OTE (78.6%).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+                    <h3 class="font-bold text-emerald-400 mb-2">3. Gestión de Salida</h3>
+                    <ul class="text-sm text-gray-400 space-y-1">
+                        <li>• Objetivos en extensiones SDE (-2.0 / -2.5).</li>
+                        <li>• Límite Algorítmico máximo SDE (-4.0).</li>
+                        <li>• Stop Loss ajustado milimétricamente tras el Order Block.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. REDES SOCIALES -->
+        <section id="redes" class="bg-gradient-to-r from-gray-900 via-gray-900/80 to-gray-900 border border-gray-800 rounded-xl p-8 text-center space-y-4">
+            <h2 class="text-xl font-bold text-white">Únete a la Comunidad de Sniper Edge Bolivia</h2>
+            <p class="text-sm text-gray-400 max-w-xl mx-auto">Conéctate con nosotros en nuestras plataformas oficiales para recibir actualizaciones en tiempo real, análisis en vivo y discusión metodológica.</p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="https://t.me/SniperEdgeBolivia" target="_blank" class="bg-gray-800 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-xl border border-gray-700 text-sm font-semibold transition">Telegram Oficial</a>
+                <a href="https://instagram.com/SniperEdgeBolivia" target="_blank" class="bg-gray-800 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-xl border border-gray-700 text-sm font-semibold transition">Instagram</a>
+                <a href="https://twitter.com/SniperEdgeBolivia" target="_blank" class="bg-gray-800 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-xl border border-gray-700 text-sm font-semibold transition">X / Twitter</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="border-t border-gray-800 bg-gray-900/30 mt-12 py-6 text-center text-xs text-gray-500">
+        <p>&copy; 2026 Sniper Edge Bolivia. Todos los derechos reservados. Análisis institucional con fines educativos.</p>
     </footer>
 
 </body>
