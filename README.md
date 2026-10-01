@@ -1,0 +1,2 @@
+# probabilidadesGBPUSD
+Trading Sniper Edge
